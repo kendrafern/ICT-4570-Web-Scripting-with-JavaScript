@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+Assignment 2 Part 2 - Using a form
+Kendra Brauer
+Web Scripting with JavaScript ICT-4570-1
+assignment2_part2.html
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="assignment2_part2.css"/>
+  <title>Assignment 2 - Part 2</title>
+</head>
+<body>
+  <div>
+
+    <h1>Assignment 2 - Part 2</h1>
+    <p>The purpose of the part 2 of the assignment is to use the form.</p>
+    <p>Please enter numbers in the width and height fields. Then, press the Get Area button.</p>
+
+    <form id="areaform">
+      <section id="input">
+        <label for="width">Width:</label>
+        <input id="width">
+        <label for="height">Height:</label>
+        <input id="height">
+      </section>
+      <section id ="output">
+        <label for="area">Area:</label>
+        <output id="area"></output>
+        <br/>
+        <label for="perimeter">Perimeter:</label>
+        <output id="perimeter"></output>
+      </section>
+      <button onclick="getarea()" type="button">Get Area</button>
+    </form>
+
+  </div>
+  <!-- JavaScript -->
+  <script src="assignment2_part2.js"></script>
+</body>
+</html>

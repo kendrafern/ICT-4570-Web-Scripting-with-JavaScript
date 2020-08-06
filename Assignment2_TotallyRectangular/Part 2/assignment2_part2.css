@@ -1,0 +1,43 @@
+/*
+Assignment 2 Part 2 - Using a form
+Kendra Brauer
+Web Scripting with JavaScript ICT-4570-1
+assignment2_part2.js
+*/
+
+body {
+  background-color: #8A4BA6;
+  color: #59384A;
+}
+
+div {
+  background-color: #F2F2F2;
+  width: 40%;
+  padding: 10px;
+  margin: 10px;
+  border: 5px solid #F2AC29;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+}
+
+form {
+  font-size: 20px;
+  border-color: #F28729;
+  border-style: dashed;
+  border-width: 3px;
+  padding: 5px;
+}
+
+section#input {
+  color: #BF472C;
+}
+
+section#output {
+  color: #BF472C;
+}
