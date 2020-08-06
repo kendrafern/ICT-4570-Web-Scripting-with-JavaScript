@@ -1,0 +1,39 @@
+/*
+Kendra Brauer
+ICT-4570-1 Webscripting with JavaScript
+Week 6 Assignment: Drawing Rectangles in Top Form
+drawingRectangles.css
+*/
+
+canvas { width: 1000 ; height: 1000 ; background: #BF8888; }
+.red { color: red; }
+
+body {
+  background-color: #F2CECE;
+  background-repeat: repeat;
+  font-family: Palatino,"Times Roman",Cambria,serif;
+}
+form, canvas {
+  font-size: 16px;
+  border-color: #735151;
+  border-style: solid;
+  border-width: 4px;
+  line-height: 24px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 700px;
+}
+form section {
+  font-size: 18px;
+}
+section#input {
+  color: green;
+}
+section#output {
+  color: #F2A7A7;
+}
+button {
+    font-size: 18px;
+    background-color: #F2A7A7;
+    border-color: #735151;
+}
