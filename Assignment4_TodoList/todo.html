@@ -1,0 +1,35 @@
+<!--
+Kendra Brauer
+ICT-4570-1 Webscripting with JavaScript
+Week 4 Assignment: 4D todo list
+todo.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/todo.css"/>
+  <title>Todo List</title>
+</head>
+<body>
+  <div>
+    <h1>To-do List</h1>
+    <h2>What do you need to do?</h2>
+  </div>
+  <form id="myForm">
+    <input type="text" placeholder="something to do" id="inputTodo" name="text"/>
+    <button type="button" onclick="createTodo()">
+      <i class="fas fa-plus-square"></i>
+    </button>
+  </form>
+  <ul id="todo-list"></ul>
+  <div id="message"></div>
+  <div id="todo-count"></div>
+  <!--JavaScript-->
+  <script src="js/todo.js"></script>
+</body>
+</html>

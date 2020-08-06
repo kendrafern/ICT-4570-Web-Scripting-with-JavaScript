@@ -1,0 +1,19 @@
+/* Kendra Brauer
+ICT-4570-1 Webscripting with JavaScript
+Week 4 Assignment: 4D todo list
+css/todo.css */
+
+body {
+  background-color: #BFB8AA;
+  color: #141726;
+  font-family: 'Poppins', sans-serif;
+}
+h4 {
+  color: #F23838;
+}
+button {
+  color: #F23D4C;
+}
+#todo-list {
+  color: #6439BF;
+}
