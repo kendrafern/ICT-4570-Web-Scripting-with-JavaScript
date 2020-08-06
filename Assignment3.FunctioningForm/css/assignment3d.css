@@ -1,0 +1,102 @@
+/*
+* Kendra Brauer
+* css/assignment3d.css
+Week 3: Assignment 3D - Functioning Form
+
+Feel free to change the CSS.
+Note that items with a "." or a "#" match some class or id in the HTML file
+*/
+
+h2, h3 {
+  text-align: center;
+}
+
+/* fc9 */
+body {
+  background-color: #f9b262;
+  background-repeat: repeat;
+  font-family: Palatino, "Times Roman", Cambria, serif;
+}
+form {
+  font-size: 16px;
+  border-color: blue;
+  border-style: double;
+  border-width: 4px;
+  line-height: 24px;
+}
+form section {
+  font-size: 18px;
+}
+section#input {
+  color: green;
+}
+section#output {
+  color: purple;
+}
+.red {
+  color: red;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.summary {
+  break-before: column;
+  display: block;
+}
+span {
+  break-inside: avoid;
+  white-space: nowrap;
+  display: block;
+}
+label {
+  margin-left: 6px;
+}
+input {
+  margin-left: 6px;
+}
+output {
+  margin-right: 6px;
+}
+
+/* Let's style the button for fun!
+* Feel free to do it differently.
+*/
+
+button {
+  border: black;
+  color: black;
+  padding: 8px 6px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+table {
+  border-width:4px;
+  border-style:groove;
+  border-color: blue;
+  padding:2px;
+  width: 100%;
+}
+th, td {
+  border-width:1px;
+  border-style:solid;
+  border-color: blue;
+  padding:2px;
+}
+
+/* Things that are money should be right-aligned to line up the decimal points */
+.money {
+  text-align: right;
+}
+/* You may choose to deal with the currency differently */
+.money::before {
+  content: "US$ ";
+}
+td.money {
+  padding-right: 1.5rem;
+}

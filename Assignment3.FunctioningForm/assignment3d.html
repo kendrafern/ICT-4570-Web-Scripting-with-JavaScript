@@ -1,0 +1,128 @@
+<!doctype html>
+<!--
+** Author: Kendra Brauer
+** File: assignment3d.html
+Week 3: Assignment 3D - Functioning Form
+
+Many items in this HTML file have id and class attributes for your convenience in finding them.
+Please do not change items or item prices for the homework exercise.
+-->
+<html>
+<head>
+  <title>Assignment 3d</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/assignment3d.css" />
+</head>
+
+<body>
+  <h2>Shopping Spree Calculator</h2>
+  <h3>At The Schwartz Bakery</h3>
+  <div id="shopperInformation"> <span>
+    <label for="name">Name: </label>
+    <input id="name"/>
+  </span> </div>
+  <div id="Spree Amount">
+    <label for="spree">Your Spree Amount: </label>
+    <output id="spree" value=""></output> <!-- The JavaScript should set this amount -->
+  </div>
+  <!-- The form holds your model and most of your view -->
+  <form id="order">
+    <span>Date:
+      <input id="date" class="date" type="date"/> <!-- The JavaScript should initialize this -->
+    </span>
+    <fieldset id="items">
+      <legend>Items In Order</legend>
+      <!-- Note that this order form only accommodates fixed items -->
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th>Item Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th colspan="3">Breads</th><th class="money"><output id="breadTotal"/></th></tr>
+          <tr class="item">
+            <td id="item1" class="product bread">Vienna</td>
+            <td><input id="item1qty" type="number" min="0" max="99"/> each</td>
+            <td class="money"><output id="item1price">0.68</output></td>
+            <td class="money"><output class="itemtotal bread" id="item1total"/></td>
+          </tr>
+          <tr class="item">
+            <td id="item2" class="product bread">Small Rye</td>
+            <td><input id="item2qty" type="number" min="0" max="99"/> each</td>
+            <td class="money"><output id="item2price">0.65</output></td>
+            <td class="money"><output class="itemtotal bread" id="item2total"/></td>
+          </tr>
+          <tr class="item">
+            <td id="item3" class="product bread">Bagels</td>
+            <td><input id="item3qty" type="number" min="0" max="99"/> half-dozen</td>
+            <td class="money"><output id="item3price">0.55</output></td>
+            <td class="money"><output class="itemtotal bread" id="item3total"/></td>
+          </tr>
+          <tr class="item">
+            <td id="item4" class="product bread">Rolls</td>
+            <td><input id="item4qty" type="number" min="0" max="99"/> half-dozen</td>
+            <td class="money"><output id="item4price">0.88</output></td>
+            <td class="money"><output class="itemtotal bread" id="item4total"/></td>
+          </tr>
+          <tr><th colspan="3">Pastries</th><th class="money"><output id="pastryTotal"/></th></tr>
+          <tr class="item">
+            <td id="item5" class="product pastry">Petit Fleurs</td>
+            <td><input id="item5qty" type="number" min="0" max="99"/> each</td>
+            <td class="money"><output id="item5price">1.75</output></td>
+            <td class="money"><output class="itemtotal pastry" id="item5total"/></td>
+          </tr>
+          <tr class="item">
+            <td id="item6" class="product pastry">Small cookies</td>
+            <td><input id="item6qty" type="number" min="0" max="99"/> pound</td>
+            <td class="money"><output id="item6price">3.02</output></td>
+            <td class="money"><output class="itemtotal pastry" id="item6total"/></td>
+          </tr>
+          <tr class="item">
+            <td id="item7" class="product pastry">Eclairs</td>
+            <td><input id="item7qty" type="number" min="0" max="99"/> each</td>
+            <td class="money"><output id="item7price">1.98</output></td>
+            <td class="money"><output class="itemtotal pastry" id="item7total"/></td>
+          </tr>
+          <tr class="item">
+            <td id="item8" class="product pastry">Doughnuts (asst)</td>
+            <td><input id="item8qty" type="number" min="0" max="99"/> each</td>
+            <td class="money"><output id="item8price">0.98</output></td>
+            <td class="money"><output class="itemtotal pastry" id="item8total"/></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr id="totals">
+            <td id="emptycells" colspan="3"></td>
+            <th class="money"><output id="grandTotal"/></th>
+          </tr>
+        </tfoot>
+      </table>
+    </fieldset>
+    <fieldset id="statistics">
+      <legend>Statistics</legend>
+      <span>
+        <label for="percent">Percent remaining:</label>
+        <output id="percent"/>
+      </span>
+      <span>
+        <label for="dollars">Dollars remaining:</label>
+        <output id="dollars"/>
+      </span>
+      <!-- amount until budget, % -->
+    </fieldset>
+  </form>
+  <!-- The actions div holds your controllers -->
+  <div id="actions">
+    <!-- default button will submit - see JavaScript file -->
+    <button id="calculate" title="Press to compute results">Calculate</button>
+  </div>
+  <!-- The message div holds your status and error messages -->
+  <div id="message" class="red"></div>
+  <script src="js/assignment3d.js"></script>
+
+</body>
+</html>
