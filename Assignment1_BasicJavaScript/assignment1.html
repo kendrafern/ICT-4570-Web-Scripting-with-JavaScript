@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+  Assignment 1
+  Kendra Brauer
+  Basic JavaScript
+  assignment1.html
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 1</title>
+  </head>
+<body>
+  <h1 id="name"></h1>
+  <p>I have been using Atom for a while and plan to keep using it.</p>
+  <p id="date"></p>
+  <!--JavaScript-->
+  <script>
+    // Find the element with id "name" and set it to my name
+    document.getElementById('name').innerHTML = 'Kendra Brauer';
+    // Write content for the date at the moment the page is loaded
+    var d = new Date();
+    document.getElementById("date").innerHTML = d;
+    // Log a console message
+    console.log('Hello World!');
+  </script>
+  </body>
+</html>
