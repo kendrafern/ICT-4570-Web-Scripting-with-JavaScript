@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Kendra Brauer
+ICT-4570-1 Webscripting with JavaScript
+Week 8 Assignment 6: AJAX and the President
+index.html -->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <div>
+        <h1>AJAX and the President</h1>
+    </div>
+    <!-- Form -->
+    <form>
+        <div>
+            <!-- Name Input Form -->
+            <label for="input" class="form-labels">Search: </label>
+            <input type="text" id="input">
+            <!-- Search Button-->
+            <input type="button" value="Search" id="searchButton">
+            <!-- Clear Button-->
+            <input type="button" id="clearButton" value="Clear Form">
+        </div>
+    </form>
+
+    <!-- Table -->
+    <table>
+        <thead>
+            <tr><td id="number">#</td><td id="name">Name</td><td id="birthday">Birthday</td><td id="entered">Entered Office</td><td id="left">Left Office</td></tr>
+        </thead>
+        <tbody id="presidentTable"></tbody>
+    </table>
+    <script src="js/assignment6.js"></script>
+</body>
+</html>

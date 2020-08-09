@@ -1,0 +1,41 @@
+/* Kendra Brauer
+ICT-4570-1 Webscripting with JavaScript
+Week 8 Assignment 6: AJAX and the President
+styles.css  */
+
+body {
+  background-color: #05aafb ;
+  font-family:sans-serif;
+  font-size: 18px;
+}
+
+table {
+  background-color: #bbddf0 ;
+  margin-top: 20px;
+
+}
+
+td {
+  border:1px solid red;
+  padding: 5px;
+}
+
+#number {
+    width: 50px;
+}
+
+#name {
+    width: 200px;
+}
+
+#birthday {
+    width: 150px;
+}
+
+#entered {
+    width: 150px;
+}
+
+#left {
+    width: 150px;
+}
